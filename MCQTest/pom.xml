@@ -50,31 +50,6 @@
 	          <target>1.8</target>
 	        </configuration>
 	      </plugin>
-	      <plugin>
-			  <groupId>org.codehaus.cargo</groupId>
-			  <artifactId>cargo-maven2-plugin</artifactId>
-			  <version>1.2.0</version>
-			  <configuration>
-			    <container>
-			      <containerId>jboss6x</containerId>
-			      <home>D:\jboss-eap-6.4</home>
-			       <timeout>600000</timeout>
-			        <append>false</append>
-			    </container>
-			    <configuration>
-			      <type>existing</type>
-			      <home>D:\jboss-eap-6.4\server\default</home>
-			      <properties>
-			       <cargo.servlet.port>8090</cargo.servlet.port>
-			       <cargo.jboss.configuration>default</cargo.jboss.configuration>
-			        <cargo.hostname>localhost</cargo.hostname>
-			        <cargo.rmi.port>1099</cargo.rmi.port>
-			      </properties>
-			    </configuration>
-			  </configuration>
-			
-			</plugin> 
-	      
 	    </plugins>
   </build>
 </project>
