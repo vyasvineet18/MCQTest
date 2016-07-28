@@ -51,16 +51,28 @@
 	        </configuration>
 	      </plugin>
 	      <plugin>
-				<groupId>org.jboss.as.plugins</groupId>
-				<artifactId>jboss-as-maven-plugin</artifactId>
-				<version>7.7.Final</version>
-				<configuration>
-					<timeout>60000</timeout>
-					<username>vyasvineet18</username>
-					<password>vinit@VyasO4</password>
-					<hostname>127.0.0.1</hostname> <!-- put your IP or hostname -->
-				</configuration>
-			</plugin>
+			 <groupId>org.codehaus.cargo</groupId>
+			 <artifactId>cargo-maven2-plugin</artifactId>
+			 <version>1.2.0</version>
+			 <configuration>
+			   <container>
+			     <containerId>jbosseap</containerId>
+			     <home>D:\softwares\jboss-eap-6.4</home>
+			      <timeout>600000</timeout>
+			       <append>false</append>
+			   </container>
+			   <configuration>
+			     <type>existing</type>
+			     <home>D:\softwares\jboss-eap-6.4\standalone</home>
+			     <properties>
+			      <cargo.servlet.port>8090</cargo.servlet.port>
+			      <cargo.jboss.configuration>default</cargo.jboss.configuration>
+			       <cargo.hostname>localhost</cargo.hostname>
+			       <cargo.rmi.port>1099</cargo.rmi.port>
+			     </properties>
+			   </configuration>
+			 </configuration>
+			 </plugin> 
 	    </plugins>
   </build>
 </project>
