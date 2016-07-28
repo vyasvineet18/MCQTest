@@ -51,24 +51,15 @@
 	        </configuration>
 	      </plugin>
 	      <plugin>
-			<groupId>org.codehaus.cargo</groupId>
-			<artifactId>cargo-maven2-plugin</artifactId>
-			<version>1.1.3</version>
-			<configuration>
-				<container>
-					<containerId>jboss7x</containerId>
-					<type>remote</type>
-				</container>
-			</configuration>
-			<executions>
-				<execution>
-					<id>deploy</id>
-					<phase>install</phase>
-					<goals>
-						<goal>deploy</goal>
-					</goals>
-				</execution>
-			</executions>
+				<groupId>org.jboss.as.plugins</groupId>
+				<artifactId>jboss-as-maven-plugin</artifactId>
+				<version>7.7.Final</version>
+				<configuration>
+					<timeout>60000</timeout>
+					<username>vyasvineet18</username>
+					<password>vinit@VyasO4</password>
+					<hostname>127.0.0.1</hostname> <!-- put your IP or hostname -->
+				</configuration>
 			</plugin>
 	    </plugins>
   </build>
