@@ -36,12 +36,6 @@
 			<version>${servletapi.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-		    <groupId>org.codehaus.cargo</groupId>
-		    <artifactId>cargo-maven2-plugin</artifactId>
-		    <version>1.5.0</version>
-		</dependency>
-		
 	</dependencies>
   <build>
     <finalName>MCQTest</finalName>
@@ -55,6 +49,17 @@
 	          <target>1.8</target>
 	        </configuration>
 	      </plugin>
+	      <plugin>
+				<groupId>org.jboss.as.plugins</groupId>
+				<artifactId>jboss-as-maven-plugin</artifactId>
+				<version>7.7.Final</version>
+				<configuration>
+					<timeout>60000</timeout>
+					<username>vyasvineet18</username>
+					<password>vinit@VyasO4</password>
+					<hostname>127.0.0.1</hostname> <!-- put your IP or hostname -->
+				</configuration>
+			</plugin>
 	    </plugins>
   </build>
 </project>
