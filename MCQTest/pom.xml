@@ -56,7 +56,7 @@
 			 <version>1.2.0</version>
 			 <configuration>
 			   <container>
-			     <containerId>jboss74x</containerId>
+			     <containerId>jboss7x</containerId>
 			     <home>D:\softwares\jboss-eap-6.4</home>
 			      <timeout>600000</timeout>
 			       <append>false</append>
