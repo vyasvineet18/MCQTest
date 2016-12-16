@@ -51,7 +51,7 @@
 					<timeout>60000</timeout>
 					<username>your-jboss-admin-user</username>
 					<password>your-jboss-admin-password</password>
-					<hostname>192.168.25.2</hostname> <!-- put your IP or hostname -->
+					<hostname>127.0.0.1</hostname> <!-- put your IP or hostname -->
 				</configuration>
 			</plugin>
 		</plugins>
